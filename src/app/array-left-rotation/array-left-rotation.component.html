@@ -1,3 +1,6 @@
 <div>
-  Original Array : <pre>{{arr | json}}</pre>
+  Original Array :{{arr | json}}
 </div>
+<p> Enter Rotation Number: </p>
+<p><input type="number" [min]="1" [max]="5" [(ngModel)]="rotation" (ngModelChange)="rotate(rotation)"/> </p>
+<p> Output: {{output | json}}</p>
